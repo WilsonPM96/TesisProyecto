@@ -1,0 +1,17 @@
+img {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+p-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.fondo {
+  background-image: url("http://www.epn.edu.ec/wp-content/uploads/2016/02/IMG_2650-espacio-de-construcci%C3%B3n-epn-biblitoeca.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
