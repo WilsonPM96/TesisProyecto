@@ -1,1 +1,334 @@
-<p>estadored works!</p>
+<div class="p-grid" *ngIf="nombreLaboratorio === 'Beta'">
+  <div class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-1">
+      </div>
+      <div class="p-col-4"></div>
+      <div class="p-col-3">
+        <h1>Laboratorio {{nombreLaboratorio}}</h1>
+      </div>
+      <div class="p-col-1">
+        <img [src]="imagenLaboratorio" alt="beta" style="width: 50px; height: 50px">
+      </div>
+      <div class="p-col-4"></div>
+    </div>
+  </div>
+  <div class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-1"></div>
+      <div class="p-col-1"></div>
+      <div class="p-col-1"></div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1"></div>
+      <div class="p-col-1"></div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img  src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="{{pc1.nombre_pc}}" style="width: 55px; height: 55px;" (pointerover)="enviarLaboratorio($event, op, pc1)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1"></div>
+    </div>
+  </div>
+  <div class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-1"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="{{pc2.nombre_pc}}" style="width: 55px; height: 55px;" (pointerover)="enviarLaboratorio($event, op, pc2)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="{{pc3.nombre_pc}}" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc3)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="{{pc4.nombre_pc}}" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc4)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="{{pc5.nombre_pc}}" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc5)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC6" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC7" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1"></div>
+    </div>
+  </div>
+  <div class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-1"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC8" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC9" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC10" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC11" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC12" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC13" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1"></div>
+    </div>
+  </div>
+  <div class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-1"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC14" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC15" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC16" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC17" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC18" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC19" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1"></div>
+    </div>
+  </div>
+  <div class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-1"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC20" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1"></div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1"></div>
+      <div class="p-col-1"></div>
+      <div class="p-col-2"></div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC21" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1">
+        <div class="p-grid">
+          <div class="p-col-12">
+            <i class="fas fa-lightbulb" style="margin-left: 20px; padding-top: 10px; color: yellow">
+              <img src="../../assets/bombilla.png" alt="PC22" style="width: 20px; height: 20px; ">
+            </i>
+          </div>
+          <div class="p-col-12">
+            <img src="../../assets/pc_imagen.png" alt="PC22" style="width: 55px; height: 55px; " (pointerover)="enviarLaboratorio($event, op, pc)" (pointerleave)="cerrarToggle(op)">
+          </div>
+        </div>
+      </div>
+      <div class="p-col-1"></div>
+    </div>
+  </div>
+</div>
+<p-overlayPanel #op [dismissable]="true">
+  <h5>{{pcauxiliar.nombre_pc}}</h5>
+  <h5>Memoria Ram: {{pcauxiliar.ram}}</h5>
+  <h5>Memoria Disponible: {{pcauxiliar.almacenamiento}}</h5>
+  <h5>IP: {{pcauxiliar.ip}}</h5>
+</p-overlayPanel>

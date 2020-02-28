@@ -1,7 +1,10 @@
 export interface Estadored {
+  id_laboratorio?;
   id_pc?;
   nombre_pc?;
-  ip_pc?;
-  estado_conexion?;
-  id_laboratorio?;
+  ip?;
+  almacenamiento?;
+  ram?;
+  estado?;
+  imagen?;
 }
